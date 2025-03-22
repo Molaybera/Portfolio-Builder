@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;700&display=swap');
+
+body {
+    font-family: 'Comic Neue', cursive;
+    background: linear-gradient(135deg, #FF6B6B, #FF8E53, #FFD166, #06D6A0, #118AB2);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    animation: gradientAnimation 10s infinite alternate;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+/* Animated Background */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Layout */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Profile Section */
+.profile {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    transition: 0.3s;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.4);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.image-container:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Info Section */
+.info {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 700;
+    text-shadow: 2px 2px #000;
+    animation: bounce 2s infinite;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Fun Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #FFD700;
+    color: #333;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background: #FF5733;
+    color: white;
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Skills & Projects Section */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Animated Cards */
+.card {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    transition: 0.3s;
+    width: 300px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Button inside the cards */
+.card .btn {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 15px;
+    background: #00FFEA;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.card .btn:hover {
+    background: #FF1493;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}

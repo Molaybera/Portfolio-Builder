@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Portfolio Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>AI Portfolio Builder</h1>
+
+        <!-- Template Selection -->
+        <h2>Select a Template</h2>
+        <div id="template-selection">
+            <div class="template" onclick="selectTemplate(1)">professionals</div>
+            <div class="template" onclick="selectTemplate(2)">Fun Master</div>
+            <div class="template" onclick="selectTemplate(3)">Tech Master</div>
+        </div>
+
+        <!-- User Input Form -->
+        <h2>Enter Your Details</h2>
+        <div class="form">
+        <div class="input-container">
+            <input type="text" id="name" placeholder=" " required>
+            <label for="name">Your Name</label>
+        </div>
+
+        <div class="input-container">
+            <textarea id="bio" placeholder=" " required></textarea>
+            <label for="bio">Short Bio</label>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="skills" placeholder=" " required>
+            <label for="skills">Your Skills (comma-separated)</label>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="projects" placeholder=" " required>
+            <label for="projects">Your Projects (comma-separated)</label>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="social" placeholder=" " required>
+            <label for="social">Your Social Links</label>
+        </div>
+
+        <div class="input-container">
+            <input type="file" id="profile-pic" accept="image/*">
+        </div>
+    </div>
+        <button onclick="generatePreview()">Next</button>
+
+        <!-- Preview Section -->
+        <div id="preview-section">
+            <h2>Portfolio Preview</h2>
+            <iframe id="preview-frame"></iframe>
+            <button onclick="downloadPortfolio()">Download Portfolio</button>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

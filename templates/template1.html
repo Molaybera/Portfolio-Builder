@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio</title>
+    <link rel="stylesheet" href="template1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="info">
+            <h2>Hi, I'm <span id="portfolio-name">{name}</span></h2>
+            <p id="portfolio-bio">{bio}</p>
+            <a id="portfolio-social" {social} class="btn">Contact</a>
+        </div>
+
+        <div class="profile-pic">
+            <div class="shape"></div>
+            <img id="portfolio-pic" src="profile-pic.png" alt="Profile Picture">
+        </div>
+    </div>
+
+    <section class="cards-container">
+        <div class="card">
+            <h2>Skills</h2>
+            <p id="portfolio-skills">{skills}</p>
+            <a href="#" class="btn">View More</a>
+        </div>
+
+        <div class="card">
+            <h2>Projects</h2>
+            <p id="portfolio-projects">{projects}</p>
+            <a href="#" class="btn">Explore</a>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
