@@ -1,6 +1,6 @@
-# 🚀 AI Portfolio Builder
+# 🚀 Portfolio Builder
 
-AI Portfolio Builder is a web-based tool that allows users to create stunning portfolios by selecting a template, filling in their details, and generating a downloadable portfolio.
+Portfolio Builder is a web-based tool that allows users to create stunning portfolios by selecting a template, filling in their details, and generating a downloadable portfolio.
 
 ## 📌 Features
 ✅ **3 Unique Templates** – Professional, Fun, and Tech-themed portfolios  
@@ -38,9 +38,10 @@ JavaScript – Functionality (Dynamic content & file downloads)
 📂 Folder Structure
 /ai-portfolio-builder
 │── /templates             # Portfolio templates
+
 │   ├── professionals.html
 │   ├── fun_master.html
-│   ├── tech_master.html
+│   ├── tech_master.htm
 │── /css                   # Stylesheets for each template
 │── /js                    # JavaScript logic
 │── index.html             # Main app interface
