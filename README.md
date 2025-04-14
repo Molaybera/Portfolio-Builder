@@ -36,23 +36,39 @@ CSS – Styling & Animations
 JavaScript – Functionality (Dynamic content & file downloads)
 
 📂 Folder Structure
-/ai-portfolio-builder
+/portfolio-builder
+
 │── /templates             # Portfolio templates
 
 │   ├── professionals.html
+
 │   ├── fun_master.html
+
 │   ├── tech_master.htm
+
 │── /css                   # Stylesheets for each template
+
 │── /js                    # JavaScript logic
+
 │── index.html             # Main app interface
+
 │── styles.css             # Main app styling
+
 │── script.js              # Main app functionality
+
 │── README.md              # Project documentation
+
 📜 License
+
 This project is open-source under the MIT License.
 
+
 🌟 Contribute
+
 Want to improve this project?
+
 -Fork the repo
+
 -Make your changes
+
 -Submit a pull request
