@@ -60,7 +60,7 @@ JavaScript – Functionality (Dynamic content & file downloads)
 
 📜 License
 
-This project is open-source under the MIT License.
+This project is open-source.
 
 
 🌟 Contribute
